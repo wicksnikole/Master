@@ -10,7 +10,15 @@ This is a RESTful API for managing appointment scheduling, including provider av
 # Notes
 
 
-If time allowed, I would have stored and updated the providers availability and the reservations in a database.
+If time allowed, I would have 
+
+stored and updated the providers availability and the reservations in a database.
+
+Made it more scaleable by specifying provider ID before looping through all the data
+
+Improved error handling for missing or malformed JSON data.
+
+Ensured appointments cannot be double-booked by checking for existing reservations before making a new one.
 
 
 
