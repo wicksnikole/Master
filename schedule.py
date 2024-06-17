@@ -94,7 +94,7 @@ def confirm_appointment():
     data = request.get_json()
     appointment_id = data['criteria'][0]["appointment_id"]
     for appointment in appointments:
-        if datetime.now() > appointment['reserved_at'] + timedelta(minutes=1):
+        if datetime.now() > appointment['reserved_at'] + timedelta(minutes=30):
           del appointment
           return jsonify({'error': 'Reservation expired'}), 400
 
