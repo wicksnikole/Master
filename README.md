@@ -7,7 +7,8 @@ This is a RESTful API for managing appointment scheduling, including provider av
 - Python 3.x
 - Flask
 
-##Notes
+# Notes
+
 
 If time allowed, I would have stored and updated the providers availability and the reservations in a database.
 
